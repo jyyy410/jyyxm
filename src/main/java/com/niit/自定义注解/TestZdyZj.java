@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD,ElementType.TYPE})//target是注解的作用域
 @Retention(RetentionPolicy.RUNTIME)//生命周期
-@Inherited//允许子注解继承
+
 @Documented//生成doc会包含注解的信息
 public @interface TestZdyZj
 {
