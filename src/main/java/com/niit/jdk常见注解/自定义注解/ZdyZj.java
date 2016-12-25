@@ -1,4 +1,4 @@
-package com.niit.自定义注解;
+package com.niit.jdk常见注解.自定义注解;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -19,9 +19,9 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD,ElementType.TYPE})//target是注解的作用域
 @Retention(RetentionPolicy.RUNTIME)//生命周期
-
+@Inherited//允许子类继承
 @Documented//生成doc会包含注解的信息
-public @interface TestZdyZj
+public @interface ZdyZj
 {
     
     String desc();//成员变量以无参数，无异常的方式声明        
