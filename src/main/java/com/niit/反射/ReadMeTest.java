@@ -7,16 +7,27 @@ import java.lang.reflect.Field;
 /**
  * 反射  Class是类在虚拟机中的字节码。
  * 
+ * class.forname
+ * 返回字节码
+ * 1 虚拟界已经有的话直接返回
+ * 2虚拟机没有的话加载源码到内存，返回字节码
+ * 
  * 三种得到Class类的方式。  不管用哪种方式得到Class，三个对象都相等a==b==c
  * p1.getClass.   
  * List.Class    
  * Class.getName("com.javalang.String")  得到存在的字节码  ，如果不存在，加载类，得到字节码
  * 
- * 8种基本数据类型和   void都可以用一个 Class表示。void.Class
+ * 
+ * 
+ * 8种基本数据类型和   void都可以用一个 Class表示。void.Class'
+ * 
+ * 
+ * 
+ * 
  * 
  * 9种预定义class对象  Boolean.type char byte short int long float double void
  * 
- * 反射就是把java种的各种成分映射成java类
+ * 反射就是把java种的各种成分映射成java类 例如包，属性，方法，
  * 
  * 实例化一个对象，Class.newInstance    Class构造方法.newINstance   构造方法类通过
  * 

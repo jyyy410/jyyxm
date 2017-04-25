@@ -43,6 +43,7 @@ public BeanFactory(InputStream inputStream) {
         // TODO Auto-generated catch block
         e.printStackTrace();
     }
+    return classname;
        
       
 }

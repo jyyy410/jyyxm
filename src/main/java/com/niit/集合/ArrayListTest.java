@@ -48,6 +48,7 @@ public class ArrayListTest
         arrayList.add(new Person("jiejie",3));
         arrayList.add(new Person("didi",4));
         
+        
         Iterator iterator = arrayList.iterator();
         while (iterator.hasNext()) {
             //xiaoming2
@@ -56,6 +57,7 @@ public class ArrayListTest
             System.out.println(((Person) iterator.next()).getName()+((Person) iterator.next()).getAge());
             
         }
+        //arrayList.add(1)这里是自动装箱   list只能存放集合的引用   引用放站内存对象放在堆内存。
     }
 
 }
